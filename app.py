@@ -13,7 +13,7 @@ def load_model():
         repo_id="zahratalitha/klasifikasihewan",   # ganti dengan repo HuggingFace kamu
         filename="kucinganjing.h5"         # nama file model
     )
-    model = tf.keras.models.load_model(model_path)
+    model = tf.keras.models.load_model(model_path, compile=False)
     return model
 
 model = load_model()
