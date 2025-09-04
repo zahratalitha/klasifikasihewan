@@ -11,7 +11,7 @@ st.title("🐶🐱 Kasifikasi Gambar: Anjing vs Kucing")
 def load_model():
     model_path = hf_hub_download(
         repo_id="zahratalitha/klasifikasihewan",   # ganti dengan repo HuggingFace kamu
-        filename="kucinganjing(3).h5"         # nama file model
+        filename="kucinganjing.h5"         # nama file model
     )
     model = tf.keras.models.load_model(model_path)
     return model
